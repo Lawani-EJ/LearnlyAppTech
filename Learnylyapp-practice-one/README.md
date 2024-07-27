@@ -1,2 +1,3 @@
 # Learnlyapp practice Repo (Exercise)
-## Create your first repo
+## First task Create your first repo
+## Second task create a simple page that makes use of JS
