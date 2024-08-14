@@ -1,4 +1,6 @@
-![Learnly-App Tech logo](./assets/new-logo.svg)
+<p align="center">
+  <img src="./assets/new-logo.svg" alt="Learnly-App Tech logo"/>
+</p>
 
 # Learnly-App tech Backend Bootcamp
 
