@@ -2,7 +2,7 @@
   <img src="./assets/new-logo.svg" alt="Learnly-App Tech logo"/>
 </p>
 
-# Learnly-App tech Backend Bootcamp
+# Learnly-App tech (Backend Bootcamp)
 
 ## Welcome!!
 Welcome to my GithHub repository for my coding bootcamp showcasing my learning and progrsiion in Learnly-App's Backend Bootcamp
