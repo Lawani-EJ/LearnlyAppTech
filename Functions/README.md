@@ -1,4 +1,4 @@
-# Fundamentals of functions (Backe-end Class Week7)
+# Fundamentals of functions (Backend Class Week7)
 
 ## Functions
 Functions are reusable blocks of code that perform a specific task you define it once and then you can run/call it whenever the task is done.
