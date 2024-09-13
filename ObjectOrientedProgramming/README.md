@@ -60,3 +60,72 @@ The output shown below is :
 Micheal
 James Franco
 ```
+
+## Object Properties: Adding, Accessing and Modifying Properties.
+Properrties are defined as key-value pairs, where the key is a string or symbol and the value can be any data type, including numbers, strings, booleans, functions, arrays, or other objects.
+
+### It's Syntax:
+
+```javascript
+objectName.property
+objectName["property"]
+objectName[expression]
+```
+
+example:
+```javascript
+let school = {
+    name: 'Royal Family Academy(RFA)',
+    location: 'Abuja FCT',
+    established: '2000',
+    20:1000,
+    displayInfo: function(){
+        console.log(`The Value of the key 20 is ${school[20]}`);
+    }
+}
+
+school.displayInfo();
+```
+
+### Output:
+![Output](../assets/Screenshot%20(108).png)
+
+Object Properties are straightforward associations between a name and a value.
+Each property has a value and a name, where the value represents the data linked to the property. This data can be accessed based on the property's access level.
+
+## Object Methods
+Object methods in JavaScript can be accesed by using functions.
+- In a method 'this' this refers to the owner project.
+- Additional information can also be added along with the object method.
+
+#### Syntax
+```javascript
+objectName.methodName()
+```
+
+Example:
+
+```javascript
+let student = {
+    name: "Samuel",
+    class:"6th Grade",
+    section: "B",
+
+    studentDetails: function(){
+        return this.name + " " + this.class + " " + this.section + " ";
+    }
+};
+
+console.log(student.studentDetails());
+```
+
+### Output:
+![Output](../assets/Screenshot%20(109).png)
+
+properties:
+A function may be divided into different property values, which are then combined and returned together.
+This student function contains these properties:
+- name
+- class
+- section
+
