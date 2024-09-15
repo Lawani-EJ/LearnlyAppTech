@@ -187,3 +187,64 @@ greet.call(anotherPerson);
 
 This program defines a greet function and two objects, person and anotherPerson. Then calls greet, person.sayHello, and greet with anotherPerson context using call.
 
+## Object-Oriented Programming (OOP)
+(OOP) Object Oriented Programming aims to implement real-world entities like, inheritance, hiding, polymorphism, e.t.c. The main aim of OOP is to bind together the data and the functions that operate on them so that no other part of the code can access this data except that function.
+
+### (OOP) Concept's :
+- Class
+- Objects
+- Encapsulation
+- Data Abstraction
+- Inheritance 
+- Polymorphism
+- Dynamic Binding
+- Message Passing
+
+### 1. Class:
+A class is a user-defined data type. it consist's of data members and member functions, which can be accesed and used by creating an instance of that class
+
+### 2. Object:
+ An object is the basic unit of Object-Oriented-Programming and represents real-life entities. An object is an instance of a class.
+
+### 3. Data Abstraction: 
+Data abstraction refers to providing only essential information about the data to the outside world, hiding the background details or implementation.
+
+### 4. Encapsulation:
+In encapsulation the variables or data of a class are hidden from any other class and can be accessed only through any member function of their class in which they are declared.
+
+### 5. Inheritance:
+Inheritance is the capability of a class to derive properties and characteristics from another class.
+
+### 6. Polymorphism:
+Polymorphism is the ability of a message to be displayed in one more than one form.
+
+### 7. Dynamic Binding:
+Dynamic binding is when the code is associated with a given procedure call is not known until the time of the call at run time.
+
+## Prototypes
+Prototypes in JavaScript are template objects that provide shared properties and methods to the other objects.
+
+Example
+
+```javascript
+function Cars(make,model) {
+    this.make = make;
+    this.model = model;
+}
+
+Cars.prototype.start = function (){
+    console.log("Engine Started");
+};
+
+const myCars = new Cars("Toyota", "Camry");
+const anotherCar = new Cars("Honda", "Accord");
+
+myCars.start();
+anotherCar.start();
+```
+### Output:
+![Output](../assets/Screenshot%20(155).png)
+
+In this example a Cars constructor function is defined to create car objects with the make and model properties and a shared start method is added to the cars protoype for initiating the engine.
+
+
