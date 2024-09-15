@@ -129,3 +129,61 @@ This student function contains these properties:
 - class
 - section
 
+## `this` Keyword:
+The this keyword refers to the object that is currently executing a function or method,
+The keyword refers to different objects depending on how it is used.
+
+1. When used within a method of an object, `this` keyword points to that object.
+2. When used by itself, `this` keyword points to the global object.
+3. Within a function, `this` keyword typically points to the global object.
+4. In a function under strict mode, `this` keyword becomes undefined.
+5. During an event, `this` keyword points to the element that triggered the event.
+5. Methods such as `call()`, `apply()`, and `bind()` can reassign this to any desired object.
+
+Example:
+
+### using `this` keyword in Method
+
+```javascript
+const person = {
+    name: 'John',
+    age: 23,
+    greet() {
+        console.log("Hello my name is " + this.name + " and I am" + this.age + " Years old.");
+    }
+};
+
+person.greet();
+```
+
+### Output:
+![Output](../assets/Screenshot%20(133).png)
+
+This program defines a person object with the name, age and a greet method, when the person.greet() is called, it prints a greeting message with the person's name and age.
+
+### using `this` keyword in function
+
+```javascript
+function greet() {
+    console.log("Hello, my name is " + this.name);
+}
+
+const person = {
+    name: 'John',
+    sayHello: greet
+};
+
+const anotherPerson = {
+    name: "Jane"
+};
+
+greet();
+person.sayHello();
+greet.call(anotherPerson);
+```
+
+### Output:
+![Output](../assets/Screenshot%20(134).png)
+
+This program defines a greet function and two objects, person and anotherPerson. Then calls greet, person.sayHello, and greet with anotherPerson context using call.
+
