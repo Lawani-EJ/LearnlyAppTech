@@ -250,3 +250,46 @@ In this example a Cars constructor function is defined to create car objects wit
 
 ## Prototypal Inheritance:
 JavaScript uses prototypal inheritance, which involves cloning a parent object. The objects are templates for creating the next object. So in Javascript there are no classes and an object inherits properties from another object. 
+
+# TO-DO Task:
+## 1. Create and manipulate objects.
+## 2. Write object methods and use 'this' keyword.
+
+1. Create and manipulate objects:
+```javascript
+let Boy = {
+    first_name: 'Micheal',
+    last_name: 'Kenuga',
+
+
+    getFunction: function() {
+     return (`The name of this person is ${Boy.first_name} ${Boy.last_name}`)   
+    },
+
+    phone_no: {
+        mobile: '1234567890',
+        landline: '0987654321'
+    }
+}
+
+console.log(Boy.getFunction());
+console.log(Boy.phone_no.landline);.
+```
+
+```javascript
+The name of this person is Micheal Kenuga
+0987654321
+```
+
+2.  Write object methods and use 'this' keyword:
+```javascript
+const person = {
+    name: 'John',
+    age: 23,
+    greet() {
+        console.log("Hello my name is " + this.name + " and I am" + this.age + " Years old.");
+    }
+};
+
+person.greet();
+```
