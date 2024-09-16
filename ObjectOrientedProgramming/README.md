@@ -248,3 +248,5 @@ anotherCar.start();
 In this example a Cars constructor function is defined to create car objects with the make and model properties and a shared start method is added to the cars protoype for initiating the engine.
 
 
+## Prototypal Inheritance:
+JavaScript uses prototypal inheritance, which involves cloning a parent object. The objects are templates for creating the next object. So in Javascript there are no classes and an object inherits properties from another object. 
